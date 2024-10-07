@@ -155,7 +155,7 @@ export default function CompatibilityView(props: Props) {
           mt={10}
           size="lg"
           type="email"
-          placeholder="Inserisci il modello o la marca del telecomando"
+          placeholder="Enter the model or brand of the remote control.."
           onChange={(event) => {
             props.setFilter(event.target.value);
           }}

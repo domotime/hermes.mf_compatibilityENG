@@ -18,11 +18,11 @@ const Home = () => {
   let body =
     <>
       <Head>
-        <title>Telecomando Duplicatore Universale</title>
+        <title>Universal Duplicator Remote Control</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-        <meta name="description" content="Il telecomando duplicatore universale HERMES.MF è progettato per duplicare la stragrande maggioranza dei radiocomandi presenti sul mercato, da 290 a 900 MHz." />
-        <meta name="keywords" content="Telecomando duplicatore, duplicatore universale, telecomando" />
-        <meta property="og:title" content="Telecomando Duplicatore Universale" />
+        <meta name="description" content="The HERMES.MF universal duplicator remote control is designed to duplicate the vast majority of remote controls available on the market, ranging from 290 to 900 MHz." />
+        <meta name="keywords" content="Duplicator remote control, universal duplicator, remote control." />
+        <meta property="og:title" content="Universal Duplicator Remote Control" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
         <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
