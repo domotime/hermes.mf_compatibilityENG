@@ -1,0 +1,4 @@
+Sitemap: https://telecomandipercancelli.it
+
+User-agent: *
+Allow: /*
