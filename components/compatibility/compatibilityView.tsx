@@ -202,10 +202,14 @@ export default function CompatibilityView(props: Props) {
                       <Tbody>
                         {remotePerBrand.remotes.map((remote, index) => {
                           return (
-                            <Tr key={index}>
+                            <Tr key={index} _hover={{ color: "blue.300"}}>
                               <Td w={"70%"}>{remote.model}</Td>
                               <Td>
                                 <Button
+                                _hover={{
+                                  bg: "blue.300", // Cambia il colore di sfondo al passaggio del mouse
+                                  color: "white", // Cambia il colore del testo
+                                }}
                                   onClick={() => {
                                     handleClickIstruzioni(remote);
                                   }}
