@@ -115,6 +115,7 @@ export default function HeroView() {
                   display={{ base: "block", xl: "inline" }}
                   color={useColorModeValue("brand.600", "brand.400")}
                 >
+                  <br />
                   <Text
                     display={{ base: "block", lg: "inline" }}
                     w="full"

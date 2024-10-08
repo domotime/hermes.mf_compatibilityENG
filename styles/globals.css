@@ -31,3 +31,7 @@ a {
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: red;
 }
+
+input::placeholder {
+  color: rgb(255, 255, 255); 
+}

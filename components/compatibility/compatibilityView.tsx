@@ -144,7 +144,7 @@ export default function CompatibilityView(props: Props) {
         <chakra.p
           mb={6}
           fontSize={{ base: "lg", md: "xl" }}
-          color="gray.500"
+          color="white.500"
           lineHeight="base"
         >
           Thanks to this tool you can instantly check if the your remote control
@@ -154,8 +154,22 @@ export default function CompatibilityView(props: Props) {
           width={{ base: "100%", lg: "50%" }}
           mt={10}
           size="lg"
-          type="email"
+          type="text"
+          borderColor="white"
           placeholder="Enter the model or brand of the remote control.."
+          _hover={{
+            borderColor: 'gray.400', /* Bordo grigio quando il mouse è sopra */
+            _placeholder: {
+              color: 'gray.400', /* Cambia colore del placeholder quando il mouse è sopra */
+            },
+          }}
+          _focus={{
+            borderColor: 'blue.400', /* Bordo azzurro quando in focus */
+            boxShadow: '0 0 0 2px blue.200', /* Illumina il bordo con azzurro */
+            _placeholder: {
+              color: 'blue.400', /* Colore azzurro del placeholder quando in focus */
+            },
+          }}
           onChange={(event) => {
             props.setFilter(event.target.value);
           }}
