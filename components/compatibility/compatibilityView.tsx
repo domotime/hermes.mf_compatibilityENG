@@ -76,6 +76,17 @@ export default function CompatibilityView(props: Props) {
         ?.focus();
         */
       return;
+    } else if (remote.brand.includes("HORMANN")) {
+      router.push("hormann_diretto");
+      /*
+      window
+        .open(
+          "https://www.domotime.com/senza-categoria/duplicazione-in-autoapprendimento-hermes-mf-bft/#body",
+          "_blank"
+        )
+        ?.focus();
+        */
+      return;
     } else if (remote.brand.includes("V2")) {
       router.push("autoapprendimento_v2");
       /*
@@ -87,8 +98,31 @@ export default function CompatibilityView(props: Props) {
         ?.focus();
         */
       return;
-    }
-    if (remote.programming_method === RemoteProgrammingMethod.diretto) {
+    } else if (remote.brand.includes("GENIUS")) {
+      if (remote.programming_method === RemoteProgrammingMethod.diretto) {
+        router.push("genius_diretto");
+        /*
+        window
+          .open(
+            "https://www.domotime.com/senza-categoria/duplicazione-diretto-hermes-mf-faac/#body",
+            "_blank"
+          )
+          ?.focus();
+          */
+      } else if (
+        remote.programming_method === RemoteProgrammingMethod.autoapprendimento
+      ) {
+        router.push("autoapprendimento");
+        /*
+        window
+          .open(
+            "https://www.domotime.com/senza-categoria/duplicazione-auto-apprendimento-hermes-mf/#body",
+            "_blank"
+          )
+          ?.focus();
+          */
+      }return;
+    }if (remote.programming_method === RemoteProgrammingMethod.diretto) {
       router.push("diretto");
       /*
       window
@@ -122,8 +156,9 @@ export default function CompatibilityView(props: Props) {
         )
         ?.focus();
         */
-    }
+    } 
   };
+
 
   return (
     <Box py={{ base: 4, lg: 32 }} mx={{ base: 4, lg: 10 }}>

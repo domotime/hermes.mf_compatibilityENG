@@ -65,35 +65,49 @@ function DirectFaac() {
       </Flex>
     );
   };
-
+  const handleBack = () => {
+    history.back(); // Torna alla pagina precedente
+  };
   return (
     <ChakraProvider>
       <ThemeProvider theme={theme}>
         <ColorModeProvider>
           <CSSReset />
-
+          <Button onClick={handleBack} colorScheme="blue">
+          Go back
+          </Button>
           <Box
             w={{ base: "full", md: 11 / 12, xl: 8 / 12 }}
             textAlign={{ base: "left", md: "left" }}
             mx="auto"
           >
             <VStack>
-              <chakra.h1
-                mb={10}
-                mt={20}
-                fontSize={{ base: "xl", md: "4xl" }}
-                fontWeight={{ base: "bold", md: "extrabold" }}
-                lineHeight="shorter"
-              >
-                Direct duplication FAAC remote control
-              </chakra.h1>
+            <chakra.h1
+  mb={10}
+  mt={20}
+  fontSize={{ base: "xl", md: "4xl" }}
+  fontWeight={{ base: "bold", md: "extrabold" }}
+  lineHeight="shorter"
+>
+  FAAC Remote Control with Direct Duplication
+</chakra.h1>
+<chakra.p fontSize={"xl"} mb={10} maxW="1000px">
+  To insert the new HERMES.MF into the receiver, duplicate the code from the original remote control and verify by pressing 4/5 times on the control panel.
+</chakra.p>
+<br />
+
+<chakra.p mb={10}>
+  Below is the procedure for duplicating a remote control with a Rolling Code for FAAC models with direct learning. <br />
+  Ensure that the remote control to duplicate is a <b>MASTER</b>.
+</chakra.p>
+
+              <br />
 
               <chakra.p mb={10}>
-                The procedure for duplicating is given below a remote control
-                with Rolling Code for FAAC models ad direct learning. <br />
-                Make sure the remote control to be duplicated is a <b>MASTER</b>
-                .
-              </chakra.p>
+  Below is the procedure for duplicating a remote control with a Rolling Code for FAAC models with direct learning. <br />
+  Ensure that the remote control to duplicate is a <b>MASTER</b>.
+</chakra.p>
+
 
               <GridItem colSpan={2}>
                 <Stack
@@ -105,62 +119,83 @@ function DirectFaac() {
                   gridRowGap={{ md: 10 }}
                 >
                   <UnorderedList spacing={6}>
-                    <ListItem>
-                      <b>Press and hold key 1</b> and{" "}
-                      <b>in the meantime, press key 2 4 times</b>.
-                    </ListItem>
-                    <ListItem>
-                      The LED will turn <b>GREEN</b> (steady light)
-                    </ListItem>
-                    <ListItem>Release both keys</ListItem>
-                    <ListItem>
-                      The light will turn <b>RED</b> and flash with a
-                      intermittently for about 2 seconds.
-                    </ListItem>
-                    <ListItem>
-                      <b>
-                        Position the remote control to be duplicated at 1 – 3 cm
-                      </b>{" "}
-                      from the HERMES.MF duplicator
-                    </ListItem>
-                    <ListItem>
-                      <b>Press and hold the key to copy</b> del original remote
-                      control
-                    </ListItem>
-                    <ListItem>
-                      The RED LED of the HERMES.MF duplicator
-                      <b>it will change flashing mode.</b>
-                    </ListItem>
-                    <ListItem>
-                      At this point you need{" "}
-                      <b>
-                        issue the SOURCE CODE of the original remote control
-                        FAAC/GENIUS
-                      </b>
-                      , pressing keys 1 and 2 simultaneously until the LED
-                      starts flashing
-                    </ListItem>
-                    <ListItem>
-                      <b>Release the buttons</b> of the original remote control{" "}
-                    </ListItem>
-                    <ListItem>
-                      <b>Press the original remote control button</b> e wait for
-                      the HERMES.MF LED to start flashing green light
-                    </ListItem>
-                    <ListItem>
-                      <b>
-                        While the GREEN LED is flashing, press the button
-                        HERMES.MF duplicator
-                      </b>{" "}
-                      on which you want to memorize the device
-                    </ListItem>
+                  <Feature title="Programming Mode" index='1 '>
+  <b>Press and hold</b> button 1. Meanwhile, <b>press button 2 4 times</b>.
+</Feature>
+<Feature title="Release the buttons" index='2 '>
+  Release both buttons on the HERMES.MF.
+</Feature>
+<Feature title="Flashing Red LED" index='3 '>
+  At this point, the HERMES.MF light will turn <b>RED flashing</b> with an interval of about 2 seconds.
+</Feature>
+<Feature title="Position the remote control to duplicate" index='4 '>
+  Place the remote control to duplicate <b>1 - 3 cm</b> in front of the HERMES.MF.
+</Feature>
+<Feature title="Press the button to duplicate" index='5 '>
+  <b>Press and hold</b> the button of the remote control to duplicate.
+</Feature>
+<Feature title="RED LED" index='6 '>
+  The LED will turn <b>RED SOLID</b> and then start <b>flashing</b> again.
+</Feature>
+<Feature title="Source Code" index='7 '>
+  <b>Press buttons 1 and 2</b> on the remote control to duplicate until it starts flashing.
+</Feature>
+<Feature title="Press the button to duplicate again" index='8 '>
+  <b>Press and hold again</b>.
+</Feature>
+<Feature title="Green LED" index='9 '>
+  At this point, the LED will turn <b>GREEN</b> and flash faster. This confirms the successful duplication.
+</Feature>
+<Feature title="Save to a button" index='10 '>
+  Finally, press the HERMES.MF button where you want to save the newly duplicated remote.
+</Feature>
+<Feature title="Final Check" index='11 '>
+  Finally, verify that the HERMES.MF button has been saved by pressing it a couple of times and checking if the LED is <b>GREEN</b>.
+</Feature>
 
-                    <chakra.p fontSize={"xl"} mt={"10"}>
-                      The radio control is now functional and has duplicated the
-                      code of the old remote correctly. <br />
-                      To associate the new HERMES.MF simply press 4/5 times the
-                      button next to the automation.
-                    </chakra.p>
+                                <br/>
+                                <chakra.p mb={10}>
+  Procedure for HERMES.MF models before 30/10/2024:
+</chakra.p>
+<ListItem>
+  <b>Press and hold</b> button 1 and <b>press button 2 4 times</b> in the meantime.
+</ListItem>
+<ListItem>
+  The LED will light up in <b>GREEN</b> (solid light).
+</ListItem>
+<ListItem>
+  Release both buttons.
+</ListItem>
+<ListItem>
+  The light will turn <b>RED</b> and start flashing with an interval of about 2 seconds.
+</ListItem>
+<ListItem>
+  <b>Place the remote control to duplicate 1 - 3 cm</b> away from the HERMES.MF duplicator.
+</ListItem>
+<ListItem>
+  <b>Press and hold the button to copy</b> on the original remote control.
+</ListItem>
+<ListItem>
+  The <b>RED LED</b> on the HERMES.MF duplicator will <b>change flashing mode.</b>
+</ListItem>
+<ListItem>
+  At this point, it is necessary to <b>emit the SOURCE CODE</b> from the original FAAC remote by pressing buttons 1 and 2 simultaneously until the LED starts flashing.
+</ListItem>
+<ListItem>
+  <b>Release the buttons</b> on the original remote control.
+</ListItem>
+<ListItem>
+  <b>Press the button on the original remote</b> and wait for the LED on the HERMES.MF to start flashing <b>GREEN</b>.
+</ListItem>
+<ListItem>
+  <b>While the GREEN LED is flashing, press the button on the HERMES.MF duplicator</b> where you want to save the device.
+</ListItem>
+
+                    <br />
+                    <br />
+                    <br />
+
+                    
                   </UnorderedList>
                 </Stack>
               </GridItem>

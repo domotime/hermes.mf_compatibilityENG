@@ -76,7 +76,7 @@ export default function FeaturesView() {
             lineHeight="shorter"
             letterSpacing="tight"
           >
-            {"Telecomando duplicatore "}
+            {"Remote control duplicator "}
             <chakra.span color="red.500" fontSize={!isMobile ? "4xl" : "6xl"}>
               UNIVERSAL
             </chakra.span>

@@ -1,29 +1,9 @@
 export const telecomandi: any = {
-    "ROGER": {
-        "Diretto": "R80-104-R / R80-102-R / H80 / E80 / E80 4 Pulsanti / M80-44-R / Synus (Codice Fisso) / T80-TX2 (Codice Fisso)"
+    "ACM": {
+        "Ricevente": "TX2 / TX2 COLOR / TX4"
     },
     "APERIO": {
-        "Diretto": "GO / GO MINI / GO PRO"
-    },
-    "CLEMSA": {
-        "Diretto": "MASTERCODE MW (CODICE FISSO)",
-        "Ricevente": "E-CODE N / MUTANCODE"
-    },
-    "FAAC": {
-        "Diretto": "TML 433SLH / DL 868 SLH / T 433 SLH / T 868 SLH / XT 433 SLH / XT 868 SLH / XT 433 SLH BLACK / XT 868 SLH BLACK",
-        "Autoapprendimento": "TE433HG / XT 433 RC / XT4 433 RCBE"
-    },
-    "GENIUS": {
-        "Diretto": "AMIGO / AMIGOLD / KILO",
-        "Autoapprendimento": "BRAVO / ECHO"
-    },
-    "NORTON": {
-        "Diretto": "GO MINI NORTON / GO NORTON",
-        "Autoapprendimento": "NEO / TXCD"
-    },
-    "ROPER": {
-        "Diretto": "GO MINI ROPER / GO ROPER",
-        "Autoapprendimento": "NEO"
+        "Ricevente": "GO / GO PRO / GO MINI"
     },
     "ADYX": {
         "Autoapprendimento": "433-HG BRAVO / TE4433H BLUE"
@@ -32,13 +12,22 @@ export const telecomandi: any = {
         "Autoapprendimento": "COMPACT / HY-DOM / MARS / MERCURI B / MERCURI C / SABUTON / SATURN / ST3/N / TERRA / TMP-1 / TMP-2 / UNITECH"
     },
     "ALLMATIC": {
-        "Autoapprendimento": "BRO.OVER / BROWN / BROWN RED / MINIPASS / PASS / TECH3"
+        "Autoapprendimento": "BRO.OVER / BROWN / BROWN RED / MINIPASS / PASS / TECH3 / FOR4"
+    },
+    "APERTO (SOMMER)": {
+        "Ricevente": "4020-TX03-434 / TX02-434-2 / TX02-868-2"
     },
     "APRIMATIC": {
         "Autoapprendimento": "TR / TM4 / TXM"
     },
+    "AVIDSEN": {
+        "Ricevente": "104250 / 104251 / 104250 OLD / 104250 RED / 104257 / 104350 / 654250"
+    },
+    "BALLAN": {
+        "Ricevente": "FM400 / FM400E"
+    },
     "BENINCA": {
-        "Autoapprendimento": "APPLE / CUPIDO / LOT WCV / ROLLKEY / TO.GO.WV / TO.GO.QV / TWV",
+        "Autoapprendimento": "TO.GO.WV / TWV / ROLLKEY / APPLE / LOT WCV / CUPIDO / TO.GO.QV / HAPPY VA / TO.GO.VA",
         "Ricevente": "IO"
     },
     "BFT": {
@@ -47,88 +36,27 @@ export const telecomandi: any = {
     "CARDIN": {
         "Autoapprendimento": "XRADO / S437 TX / TRQ S449 / TRQ S449 GREEN (PRECODE) / TRQ S486 / TXQ S449 / TXQ S449 GREEN / TXQ S486"
     },
-    "CAME": {
-        "Diretto": "TOP 432 EE / TOP 434 EE / TOP 862 EE",
-        "Autoapprendimento": "TOP 2DR / TOP 4DR"
-    },
-    "DITEC": {
-        "Autoapprendimento": "BIXLG / BIXLP / GOL4"
-    },
-    "ERREKA": {
-        "Autoapprendimento": "IRIS / ROLLER 2 / ROLLER 433 / ROLLER 868 / SOL 433 / SOL 868 / VEGA 433 / VEGA 868"
-    },
-    "FADINI": {
-        "Autoapprendimento": "JUBI433 / JUBI-SMALL"
-    },
-    "GIBIDI": {
-        "Autoapprendimento": "AU1600 / AU1600 WOOD / AU1680 / AU1680 WOOD / DOMINO"
-    },
-    "JCM": {
-        "Autoapprendimento": "NEO / TWIN"
-    },
-    "KING GATES": {
-        "Autoapprendimento": "CLIPPER / STYLO"
-    },
-    "MHOUSE": {
-        "Autoapprendimento": "GTX4 / TX3 / TX4"
-    },
-    "MOOVO": {
-        "Autoapprendimento": "MT4G"
-    },
-    "NICE": {
-        "Autoapprendimento": "ERGO / FLOR-S / FLOR-S ERA / INTI / PLANO / SMILO / VERY-VR / ON ERA / ONE (ON) / ONE (ON FM)"
-    },
-    "O&O": {
-        "Autoapprendimento": "T.COM R4-2 / T.COM R8-2 / TX / TX (NEO) / TWIN"
-    },
-    "PRASTEL": {
-        "Autoapprendimento": "BFOR / MPSTLE  /  MPSTP2E / MTE / SLIM-E / TCE / TRQ-P"
-    },
-    "SABUTOM": {
-        "Autoapprendimento": "BROOVER / BROSTAR"
-    },
-    "SECULUX": {
-        "Autoapprendimento": "NEO"
-    },
-    "SIMINOR": {
-        "Autoapprendimento": "CVXNL / MITTO",
-        "Ricevente": "SIM433"
-    },
-    "TAU": {
-        "Autoapprendimento": "250K-SLIMR / 250K-SLIMRP / 250T-4RP"
-    },
-    "V2": {
-        "Autoapprendimento": "HANDY / PHOENIX / PHOX 433 / TRC / TSC / TXC"
-    },
-    "VDS": {
-        "Autoapprendimento": "ECO-R / TRQ P"
-    },
-    "ACM": {
-        "Ricevente": "TX2 / TX2 COLOR / TX4"
-    },
-    "APERTO (SOMMER)": {
-        "Ricevente": "4020-TX03-434 / TX02-434-2 / TX02-868-2"
-    },
-    "ATA": {
-        "Ricevente": "PTX4 BLU / PTX4 PINK"
-    },
-    "AVIDSEN": {
-        "Ricevente": "104250 / 104250 OLD / 104250 RED / 104251 / 104257 / 104350 / 654250"
-    },
-    "BALLAN": {
-        "Ricevente": "FM400 / FM400E"
-    },
     "CASALI": {
-        "Ricevente": "GENIUS / CASALI A252RC"
+        "Autoapprendimento": "GENIUS / CASALI A252RC"
     },
     "CHAMBERLAIN LIFT MASTER MOTOR LIFT": {
         "Ricevente": "953ESTD / 371 LM / 971 LM / 84330E / 94334CE / 94333E / 94334E / 94335E / 9747E / 1A5639-7 / 1A5477 / 1A6487 / 132B2372 / 94330EML / 9333EML / 94335EML / 84330EML / 84333EML / 84335EML / 8747EML"
+    },
+    "CLEMSA": {
+        "Diretto": "MASTERCODE MW",
+        "Ricevente": "E-CODE N / MUTANCODE / T / T-8 "
+    },
+    "COMUNELLO": {
+        "Ricevente": " KEEP "
     },
     "DASPI": {
         "Ricevente": "ZERO RC"
     },
     "DEA SYSTEM": {
         "Ricevente": "GENIE R 273 / GENIE R-GT2N / GOLDR / GT2M / MIO TR / PUNTO 278 / TRN"
+    },
+    "DITEC/ENTREMATIC": {
+        "Autoapprendimento": "BIXLG / BIXLP / GOL4 / ZEN "
     },
     "DOORHAN": {
         "Ricevente": "TRANSMITTER 4"
@@ -139,8 +67,29 @@ export const telecomandi: any = {
     "ECOSTAR": {
         "Ricevente": "RSC / RSE / RSZ"
     },
-    "GENIE": {
-        "Ricevente": "G1T-BX / G3T-BX / GICT390 / GICTD / GIFT390-1 / GIFTD / GIT / GITR-3 / GM3T"
+    "ERREKA": {
+        "Autoapprendimento": "IRIS / ROLLER 2 / ROLLER 433 / ROLLER 868 / SOL 433 / SOL 868 / VEGA 433 / VEGA 868"
+    },
+    "FADINI": {
+        "Autoapprendimento": "JUBI 433 / JUBI-SMALL / DIVO 71-4 "
+    },
+    "FAAC": {
+        "Diretto": "TML 433SLH / DL 868 SLH / T 433 SLH / T 868 SLH / XT 433 SLH / XT 868 SLH / XT 433 SLH BLACK / XT 868 SLH BLACK",
+        "Autoapprendimento": "TE433HG / XT 433 RC / XT4 433 RCBE"
+    },
+    "GENIUS": {
+        "Diretto": "JA332-JA334 868 / AMIGOLD /  KILO 433 JLC / KILO 868 JLC ",
+        "Autoapprendimento": "BRAVO / ECHO"
+    },
+    "GIBIDI": {
+        "Autoapprendimento": "AU1600 / AU1600 WOOD / AU1680 / AU1680 WOOD / DOMINO / MAKO "
+    },
+    "HORMANN": {
+        "Diretto": "  HS 868 - BI SECUR ",
+    },
+    "JMC": {
+        "Autoapprendimento": "NEO / TWIN",
+        "Ricevente": "GO / GO PORTIS / GO NORTON / GO MINI"
     },
     "KBLUE": {
         "Ricevente": "ETH-TEL01"
@@ -148,44 +97,68 @@ export const telecomandi: any = {
     "KEY": {
         "Ricevente": "900TXB-42R / SUB 44R / TXB 44R"
     },
+    "KING GATES": {
+        "Autoapprendimento": "CLIPPER / STYLO"
+    },
+    "MOOVO": {
+        "Autoapprendimento": "MT4G"
+    },
     "KLING": {
-        "Ricevente": "KUA / KUA E / KUA S"
+        "Ricevente": "900TXB-42R / TXB 44R / SUB 44R"
     },
     "LABEL": {
-        "Ricevente": "SPYCO"
+        "Autoapprendimento": "SPYCO"
     },
     "LIFE": {
         "Ricevente": "FIDO"
     },
-    "LINEAR": {
-        "Ricevente": "ACT-21 / ACT-22 / MCT-11 / STING RAY ACT-31 / STING RAY ACT-34B"
+    "MHOUSE": {
+        "Autoapprendimento": "GTX4 / TX3 / TX4"
     },
-    "MERLIN 2.0": {
-        "Ricevente": "E940M / E943M / E945M"
+    "NICE": {
+        "Autoapprendimento": "ERGO / FLOR-S / FLOR-S ERA / INTI / PLANO / SMILO / VERY-VR / ON ERA / ONE (ON) / ONE (ON FM)"
     },
-    "MERLIN PROLIFT": {
-        "Ricevente": "C940 / C943 / C945 / M842 / M844"
+    "NORMSTHAL": {
+        "Ricevente": " RCU 2-4 K / EA 433 2-4 K"
+    },
+    "NORTON": {
+        "Diretto": "GO MINI NORTON / GO NORTON",
+        "Autoapprendimento": "NEO / TXCD"
     },
     "NOVOFERM": {
-        "Ricevente": "MCHS / MICRO-NOVOTRON 502 / MINI-NOVOTRON 504 / MICRO-NOVOTRON 502 / MICRO-NOVOTRON 504 / MICRO-NOVOTRON 31 / MICRO-NOVOTRON 51 / MINI-NOVOTRON 30 / MINI-NOVOTRON 50 / MNHS"
+        "Ricevente": "MCHS / MICRO-NOVOTRON 502 / MINI-NOVOTRON 504 / MICRO-NOVOTRON 522 / MICRO-NOVOTRON 504 / MICRO-NOVOTRON 31 / MICRO-NOVOTRON 51 / MINI-NOVOTRON 30 / MINI-NOVOTRON 50 / MNHS"
     },
-    "PECCININ": {
-        "Ricevente": "TX MENBRANA"
+    "O&O": {
+        "Autoapprendimento": "T.COM R4-2 / T.COM R8-2 / TX / TX (NEO) / TWIN"
+    },
+    "PRASTEL": {
+        "Autoapprendimento": "BFOR / MPSTLE / MPSTP2E / MTE / SLIM-E / TCE / TRQ-P"
     },
     "PUJOL": {
-        "Ricevente": "TWIN / VARIO / VARIO MARS / VARIO OCEAN / NEO"
+        "Ricevente": "TWIN / VARIO / VARIO MARS / VARIO OCEAN / NEO / LITHIO"
     },
-    "RIB": {
-        "Ricevente": "LITHIO"
+    "ROPER": {
+        "Diretto": "GO MINI ROPER / GO ROPER",
+        "Autoapprendimento": "NEO"
+    },
+    "SABUTOM": {
+        "Autoapprendimento": "BROOVER / BROSTAR"
     },
     "SEA": {
-        "Ricevente": "COCCINELLA ROLL / HEAD / SMART-3 ROLLING CODE / SMART DUAL ROLL"
+        "Autoapprendimento": " HEAD 433 / HEAD 868 / SMART DUAL ROLL"
     },
     "SEAV": {
-        "Ricevente": "BE HAPPY RS"
+        "Ricevente": "BE HAPPY RS / BE SMART"
+    },
+    "SECULUX": {
+        "Autoapprendimento": "NEO"
     },
     "SILVELOX": {
         "Ricevente": "MHZ 2007 / QUARZ SAW"
+    },
+    "SIMINOR": {
+        "Autoapprendimento": "CVXNL / MITTO",
+        "Ricevente": "SIM433"
     },
     "SOMFY": {
         "Ricevente": "K-EASY / K-EASY NEW / K-EASY OLD / MITTO / KEY GO RTS / TELIS RTS / KEYTIS RTS / KEYTIS RTS NS / ALARMA"
@@ -196,10 +169,19 @@ export const telecomandi: any = {
     "STAGNOLI": {
         "Ricevente": "KALLISTO / VENUS AV223"
     },
+    "TAU": {
+        "Autoapprendimento": "250K-SLIMR / 250K-SLIMRP / 250T-4RP"
+    },
     "TELCOMA": {
         "Ricevente": "FM400 / FM400E"
     },
     "TOR LIFT": {
         "Ricevente": "TORMIT4"
+    },
+    "V2": {
+        "Autoapprendimento": "HANDY / PHOENIX 868 / PHOX 433 / PHOX 868 / TRC / TSC / TXC"
+    },
+    "VDS": {
+        "Autoapprendimento": "ECO-R / TRQ P"
     }
 }

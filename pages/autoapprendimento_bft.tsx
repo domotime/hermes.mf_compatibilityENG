@@ -65,34 +65,43 @@ function Auto() {
       </Flex>
     );
   };
-
+  const handleBack = () => {
+    history.back(); // Torna alla pagina precedente
+  };
   return (
     <ChakraProvider>
       <ThemeProvider theme={theme}>
         <ColorModeProvider>
           <CSSReset />
-
+          <Button onClick={handleBack} colorScheme="blue">
+                Go back
+              </Button>
           <Box
             w={{ base: "full", md: 11 / 12, xl: 8 / 12 }}
             textAlign={{ base: "left", md: "left" }}
             mx="auto"
           >
             <VStack>
-              <chakra.h1
-                mb={10}
-                mt={20}
-                fontSize={{ base: "xl", md: "4xl" }}
-                fontWeight={{ base: "bold", md: "extrabold" }}
-                lineHeight="shorter"
-              >
-                BFT Rolling Code Duplication with Self-learning
-              </chakra.h1>
+            <chakra.h1
+  mb={10}
+  mt={20}
+  fontSize={{ base: "xl", md: "4xl" }}
+  fontWeight={{ base: "bold", md: "extrabold" }}
+  lineHeight="shorter"
+>
+  BFT Rolling Code Duplication with Auto-learning
+</chakra.h1>
 
-              <chakra.p mb={10}>
-                The procedure for duplicating is given below a remote control
-                with Rolling Code for BFT models ad self-learning. <b />
-                Make sure that the remote control to be duplicated is a MASTER.
-              </chakra.p>
+<chakra.p fontSize={"xl"} mt={"10"}>
+  The remote control is now functioning and has successfully duplicated the code from the old remote.
+  <br /> To associate the new HERMES.MF, hold the button until the GREEN flashing LED turns off.
+</chakra.p>
+
+<chakra.p mb={10}>
+  Below is the procedure for duplicating a Rolling Code remote control for BFT models with auto-learning.
+  <b /> Ensure that the remote control to be duplicated is a MASTER.
+</chakra.p>
+
 
               <GridItem colSpan={2}>
                 <Stack
@@ -104,58 +113,70 @@ function Auto() {
                   gridRowGap={{ md: 10 }}
                 >
                   <UnorderedList spacing={6}>
-                    <ListItem>
-                      <b>Press and hold key 1</b> and{" "}
-                      <b>in the meantime, press key 2 4 times</b>.
-                    </ListItem>
-                    <ListItem>
-                      The LED will turn <b>GREEN</b> (steady light)
-                    </ListItem>
-                    <ListItem>Release both keys</ListItem>
-                    <ListItem>
-                      The light will turn <b>RED</b> and flash with a
-                      intermittently for about 2 seconds.
-                    </ListItem>
-                    <ListItem>
-                      <b>
-                        Position the remote control to be duplicated at 1 – 3 cm
-                      </b>{" "}
-                      from the HERMES.MF duplicator
-                    </ListItem>
-                    <ListItem>
-                      <b>Press and hold the key to copy</b> del original remote
-                      control
-                    </ListItem>
-                    <ListItem>
-                      The RED LED of the HERMES.MF duplicator
-                      <b>it will change flashing mode.</b>
-                    </ListItem>
-                    <ListItem>
-                      At this point it is necessary
-                      <b>
-                        {" "}
-                        issue the SOURCE CODE of the original remote control BFT
-                        extension
-                      </b>
-                      by pressing the hidden button on the back with a pin, or
-                      by pressing keys 1 and 2 simultaneously (on the newer
-                      models).
-                    </ListItem>
-                    <ListItem>
-                      Release the buttons of the original remote control
-                    </ListItem>
-                    <ListItem>
-                      While the <b>GREEN LED is flashing</b>, press the button
-                      of the HERMES.MF duplicator on which you want to memorize
-                      the device.
-                    </ListItem>
+                  <Feature title="Programming Mode" index='1'>
+  <b>Press and hold</b> button 1. Meanwhile, <b>press button 2 four times</b>.
+</Feature>
+<Feature title="Release the buttons" index='2'>
+  Release both buttons of the HERMES.MF.
+</Feature>
+<Feature title="Flashing red LED" index='3'>
+  At this point, the light on the HERMES.MF will turn <b>flashing RED</b> with an interval of about 2 seconds.
+</Feature>
+<Feature title="Position the remote control to be duplicated" index='4'>
+  Position the remote control to be duplicated <b>1 - 3 cm</b> in front of the HERMES.MF.
+</Feature>
+<Feature title="Press the button to duplicate" index='5'>
+  <b>Press and hold</b> the button of the remote control to be duplicated.
+</Feature>
+<Feature title="RED LED" index='6'>
+  The LED will turn <b>RED</b> and then start <b>flashing</b>.
+</Feature>
+<Feature title="Source Code" index='7'>
+  <b>Press buttons 1 and 2</b> on the BFT remote to transmit the source code.
+</Feature>
+<Feature title="Green LED" index='9'>
+  At this point, the LED will turn <b>GREEN</b> and will flash more quickly. This confirms the correct duplication.
+</Feature>
+<Feature title="Save to a button" index='10'>
+  Finally, press the HERMES.MF button where you want to save the duplicated remote.
+</Feature>
+<Feature title="Final Check" index='11'>
+  Finally, check if the HERMES.MF button has been saved by pressing it a couple of times to see if the LED is <b>GREEN</b>.
+</Feature>
 
-                    <chakra.p fontSize={"xl"} mt={"10"}>
-                      The radio control is now functional and has duplicated the
-                      code of the old remote correctly.
-                      <br /> To associate the new HERMES.MF, hold down the
-                      button until the GREEN LED flashes turns off
-                    </chakra.p>
+                              <br/>
+                              <chakra.p mb={10}>
+  Procedure for HERMES.MF devices prior to 30/10/2024:
+</chakra.p>
+<ListItem>
+  <b>Press and hold button 1</b> and <b>simultaneously press button 2 four times</b>.
+</ListItem>
+<ListItem>
+  The LED will light up <b>GREEN</b> (steady light).
+</ListItem>
+<ListItem>Release both buttons.</ListItem>
+<ListItem>
+  The light will turn <b>RED</b> and flash with an interval of about 2 seconds.
+</ListItem>
+<ListItem>
+  <b>Position the remote control to be duplicated 1 – 3 cm</b> from the HERMES.MF duplicator.
+</ListItem>
+<ListItem>
+  <b>Press and hold the button to be copied</b> on the original remote control.
+</ListItem>
+<ListItem>
+  The RED LED on the HERMES.MF duplicator will <b>change flashing mode.</b>
+</ListItem>
+<ListItem>
+  At this point, you need to <b>transmit the SOURCE CODE of the original BFT remote</b>, either by pressing the hidden button on the back with a pin or simultaneously pressing buttons 1 and 2 (on newer models).
+</ListItem>
+<ListItem>Release the buttons on the original remote control.</ListItem>
+<ListItem>
+  While the <b>GREEN LED is flashing</b>, press the button on the HERMES.MF duplicator where you want to store the device.
+</ListItem>
+
+<br/><br/>
+                    <br/>
                   </UnorderedList>
                 </Stack>
               </GridItem>

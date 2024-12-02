@@ -27,8 +27,6 @@ import {
 import { ThemeProvider } from "@emotion/react";
 import dynamic from "next/dynamic";
 import Head from "next/head";
-import { useRemotes } from "../hooks/remotesHooks";
-import { Remote, RemoteProgrammingMethod, RemotesPerBrand } from "../models/remoteModel";
 import theme from "../theme";
 
 function Diretto() {
@@ -67,41 +65,41 @@ function Diretto() {
       </Flex>
     );
   };
-
-  const [remotes, test, remotes_per_brand] = useRemotes();
-
-  const filterBy = (remote: Remote) => {
-    return (
-      remote.programming_method == RemoteProgrammingMethod.diretto
-    );
+  
+  const handleBack = () => {
+    history.back(); // Torna alla pagina precedente
   };
-
   return (
     <ChakraProvider>
       <ThemeProvider theme={theme}>
         <ColorModeProvider>
           <CSSReset />
-
+          <Button onClick={handleBack} colorScheme="blue">
+          Go back
+          </Button>
           <Box
             w={{ base: "full", md: 11 / 12, xl: 8 / 12 }}
             textAlign={{ base: "left", md: "left" }}
             mx="auto"
           >
             <VStack>
-              <chakra.h1
-                mb={10}
-                mt={20}
-                fontSize={{ base: "xl", md: "4xl" }}
-                fontWeight={{ base: "bold", md: "extrabold" }}
-                lineHeight="shorter"
-              >
-                Self-learning remote control
-              </chakra.h1>
+            <chakra.h1
+  mb={10}
+  mt={20}
+  fontSize={{ base: "xl", md: "4xl" }}
+  fontWeight={{ base: "bold", md: "extrabold" }}
+  lineHeight="shorter"
+>
+  Direct Programming Remote Control
+</chakra.h1>
+<chakra.p fontSize={"xl"} mb={10} maxW="1000px">
+  To insert the new HERMES.MF remote control into the receiver, duplicate the code from the original remote and verify by pressing 4/5 times on the control panel.
+</chakra.p>
+<br />
+<chakra.p mb={10}>
+  Below is the procedure for duplicating a Fixed Code remote control with Direct Programming:
+</chakra.p>
 
-              <chakra.p mb={10}>
-                The procedure for duplicating is given below a remote control
-                with Rolling Code with self-learning.{" "}
-              </chakra.p>
 
               <GridItem colSpan={2}>
                 <Stack
@@ -113,75 +111,74 @@ function Diretto() {
                   gridRowGap={{ md: 10 }}
                 >
                   <UnorderedList spacing={6}>
-                    <ListItem>
-                      <b>Press and hold key 1</b> and{" "}
-                      <b>in the meantime, press key 2 4 times</b>.
-                    </ListItem>
-                    <ListItem>
-                      The LED will turn <b>GREEN</b> (steady light)
-                    </ListItem>
-                    <ListItem>Release both keys</ListItem>
-                    <ListItem>
-                      The light will turn <b>RED</b> and flash with a
-                      intermittently for about 2 seconds.
-                    </ListItem>
-                    <ListItem>
-                      <b>
-                        Position the remote control to be duplicated at 1 – 3 cm
-                      </b>{" "}
-                      from the HERMES.MF duplicator
-                    </ListItem>
-                    <ListItem>
-                      <b>Press and hold the key to copy</b> del original remote
-                      control
-                    </ListItem>
-                    <ListItem>
-                      The RED LED of the HERMES.MF duplicator will become{" "}
-                      <b>GREEN and will flash faster.</b> This confirms correct
-                      duplication.
-                    </ListItem>
-                    <ListItem>
-                      <b>
-                        While the GREEN LED is flashing, press the button
-                        HERMES.MF duplicator
-                      </b>{" "}
-                      on which you want to memorize the device
-                    </ListItem>
+                  <Feature title="Programming Mode" index='1 '>
+    <b>Press and hold</b> button 1. Meanwhile, <b>press button 2 four times</b>.
+</Feature>
+<Feature title="Release the buttons" index='2 '>
+    {" "}
+    Release both buttons of the HERMES.MF.
+</Feature>
+<Feature title="Flashing red LED" index='3 '>
+    {" "}
+    At this point, the light of the HERMES.MF will turn <b>FLASHING RED</b> with a blinking interval of about 2 seconds.
+</Feature>
+<Feature title="Position the remote to duplicate" index='4 '>
+    {" "}
+    Place the remote to duplicate <b>1 - 3 cm</b> in front of the HERMES.MF.
+</Feature>
+<Feature title="Press the button to duplicate" index='5 '>
+    {" "}
+    <b>Press and hold</b> the button on the remote to duplicate.
+</Feature>
+<Feature title="RED LED" index='6 '>
+    {" "}
+    The LED will turn <b>STEADY RED</b> and then start <b>flashing</b>.
+</Feature>
+<Feature title="Press the button to duplicate again" index='7 '>
+    {" "}
+    <b>Press and hold again</b> the button on the remote to duplicate.
+</Feature>
+<Feature title="Green LED" index='8 '>
+    At this point, the LED will turn <b>GREEN</b> and flash faster. This confirms successful duplication.
+</Feature>
+<Feature title="Save to a button" index='9 '>
+    Finally, press the button on the HERMES.MF to save the duplicated remote.
+</Feature>
+<Feature title="Final Verification" index='10 '>
+    Finally, verify that the HERMES.MF button has been saved by pressing it a couple of times and checking if the LED is <b>GREEN</b>.
+</Feature>
+                    <br/>
+                    <chakra.p mb={10}>
+  Procedure for HERMES.MF before 30/10/2024:
+</chakra.p>
 
-                    <chakra.p fontSize={"xl"} mt={"10"}>
-                      To insert the new HERMES.MF radio control in the receiver,
-                      press and hold the del key remote control until the LED
-                      starts flashing green light, and wait until it stops
-                      flashing.
-                    </chakra.p>
+<ListItem>
+  <b>Press and hold button 1</b> and <b>press button 2 four times</b> in the meantime.
+</ListItem>
+<ListItem>
+  The LED will light up in <b>GREEN</b> (steady light).
+</ListItem>
+<ListItem>Release both buttons.</ListItem>
+<ListItem>
+  The light will turn <b>RED</b> and flash with a 2-second interval.
+</ListItem>
+<ListItem>
+  <b>Place the remote control to be copied 1 – 3 cm</b> away from the HERMES.MF duplicator.
+</ListItem>
+<ListItem>
+  <b>Press and hold the button to copy</b> on the original remote control.
+</ListItem>
+<ListItem>
+  The RED LED of the HERMES.MF duplicator will turn <b>GREEN and flash faster.</b> This confirms the successful duplication.
+</ListItem>
+<ListItem>
+  <b>While the GREEN LED flashes, press the button on the HERMES.MF duplicator</b> where you want to store the device.
+</ListItem>
+
+                    <br/>
+                    <br/>
+                    <br/>
                   </UnorderedList>
-
-                  <hr />
-                  <chakra.h2>Compatible remotes</chakra.h2>
-
-                  <chakra.div mb={40}>
-                    {remotes_per_brand &&
-                      (remotes_per_brand as RemotesPerBrand[]).map(
-                        (remote, index) => {
-                          return (
-                            remote.remotes.filter(filterBy).length > 0 && (
-                              <chakra.div key={index} m={5}>
-                                <chakra.p key={index} fontSize={30}>
-                                  {remote.brand}
-                                </chakra.p>
-                                {remote.remotes
-                                  .filter(filterBy)
-                                  .map((remote, index) => {
-                                    return (
-                                      <chakra.p key={index}>- {remote.model}</chakra.p>
-                                    );
-                                  })}
-                              </chakra.div>
-                            )
-                          );
-                        }
-                      )}
-                  </chakra.div>
                 </Stack>
               </GridItem>
             </VStack>
@@ -193,3 +190,4 @@ function Diretto() {
 }
 
 export default Diretto;
+

@@ -65,105 +65,137 @@ function Auto() {
       </Flex>
     );
   };
-
+  const handleBack = () => {
+    history.back(); // Torna alla pagina precedente
+  };
   return (
     <ChakraProvider>
       <ThemeProvider theme={theme}>
         <ColorModeProvider>
           <CSSReset />
-
+          <Button onClick={handleBack} colorScheme="blue">
+                Go back
+              </Button>
           <Box
             w={{ base: "full", md: 11 / 12, xl: 8 / 12 }}
             textAlign={{ base: "left", md: "left" }}
             mx="auto"
           >
             <VStack>
-              <chakra.h1
-                mb={10}
-                mt={20}
-                fontSize={{ base: "xl", md: "4xl" }}
-                fontWeight={{ base: "bold", md: "extrabold" }}
-                lineHeight="shorter"
+            <chakra.h1
+  mb={10}
+  mt={20}
+  fontSize={{ base: "xl", md: "4xl" }}
+  fontWeight={{ base: "bold", md: "extrabold" }}
+  lineHeight="shorter"
+>
+  V2 Rolling Code Duplication with Self-Learning
+</chakra.h1>
+
+<chakra.p fontSize={"xl"} mt={"10"}>
+  The remote control is now working and has successfully duplicated the code from the old remote.
+  <br /> To associate the new HERMES.MF, press and hold the button until the LED stops flashing green.
+</chakra.p>
+<br />
+
+<chakra.p mb={10} maxW="1000px">
+  Below is the procedure for duplicating a remote control with Rolling Code for the V2 models with self-learning. <b />
+  Ensure that the remote control to duplicate is a MASTER.
+</chakra.p>
+
+                  <br/>
+
+            <GridItem colSpan={2}>
+              <Stack
+                mt={10}
+                spacing={{ base: 10, md: 0 }}
+                display={{ md: "grid" }}
+                gridTemplateColumns={{ md: "repeat(1,1fr)" }}
+                gridColumnGap={{ md: 8 }}
+                gridRowGap={{ md: 10 }}
               >
-                Duplicazione V2 Rolling Code con Auto-apprendimento
-              </chakra.h1>
+                <UnorderedList spacing={6}>
+                <Feature title="Programming Mode" index='1 '>
+  <b>Press and hold</b> the button 1. Meanwhile, <b>press 4 times</b> the button 2{" "}
+</Feature>
+<Feature title="Release the Buttons" index='2 '>
+  {" "}
+  Release both buttons on the HERMES.MF
+</Feature>
+<Feature title="Flashing Red LED" index='3 '>
+  {" "}
+  At this point, the HERMES.MF light will turn <b>FLASHING RED</b> with a flashing interval of about 2 seconds{" "}
+</Feature>
+<Feature title="Place the Remote to Duplicate" index='4 '>
+  {" "}
+  Place the remote to duplicate at <b>1 - 3 cm</b> in front of the HERMES.MF
+</Feature>
+<Feature title="Press the Button to Duplicate" index='5 '>
+  {" "}
+  <b>Press and hold</b> the button on the remote to duplicate.{" "}
+</Feature>
+<Feature title="RED LED" index='6 '>
+  {" "}
+  The LED will turn <b>SOLID RED</b> and then start <b>flashing</b> again.{" "}
+</Feature>
+<Feature title="Source Code" index='7 '>
+  {" "}
+  <b>Press buttons 1 and 2</b> on the V2 remote to transmit the source code.{" "}
+</Feature>
+<Feature title="Green LED" index='9 '>
+  At this point, the LED will turn <b>GREEN</b> and flash faster. This confirms successful duplication.
+</Feature>
+<Feature title="Save to a Button" index='10 '>
+  Finally, press the HERMES.MF button where you want to save the just-duplicated remote.
+</Feature>
+<Feature title="Final Verification" index='11 '>
+  Finally, verify that the HERMES.MF button has been saved by pressing a few times and checking if the LED is <b>GREEN</b>.
+</Feature>
 
-              <chakra.p mb={10}>
-                Di seguito viene riportata la procedura per la duplicazione di
-                un radiocomando con Codice Rolling Code per i modelli V2 ad
-                auto-apprendimento. <b />
-                Assicurarsi che il radiocomando da duplicare sia un MASTER.
-              </chakra.p>
+                              <br/>
+                              <chakra.p mb={10}>
+  Procedure for HERMES.MF models prior to 30/10/2024:
+</chakra.p>
+<ListItem>
+  <b>Press and hold button 1</b> and <b>at the same time press button 2 four times.</b>
+</ListItem>
+<ListItem>
+  The LED will light up <b>GREEN</b> (steady light)
+</ListItem>
+<ListItem>Release both buttons</ListItem>
+<ListItem>
+  The light will turn <b>RED</b> and flash with an interval of about 2 seconds.
+</ListItem>
+<ListItem>
+  <b>Place the remote to be duplicated 1 – 3 cm</b> away from the HERMES.MF duplicator
+</ListItem>
+<ListItem>
+  <b>Press and hold the button to copy</b> on the original remote
+</ListItem>
+<ListItem>
+  The <b>RED LED</b> on the HERMES.MF duplicator will <b>change flashing mode.</b>
+</ListItem>
+<ListItem>
+  At this point, it is necessary to <b>transmit the SOURCE CODE</b> of the original V2 remote by pressing buttons 1 and 2 simultaneously (for newer models).
+</ListItem>
+<ListItem>
+  Release the buttons on the original remote
+</ListItem>
+<ListItem>
+  While the <b>GREEN LED flashes</b>, press the button on the HERMES.MF duplicator where you want to save the device.
+</ListItem>
 
-              <GridItem colSpan={2}>
-                <Stack
-                  mt={10}
-                  spacing={{ base: 10, md: 0 }}
-                  display={{ md: "grid" }}
-                  gridTemplateColumns={{ md: "repeat(1,1fr)" }}
-                  gridColumnGap={{ md: 8 }}
-                  gridRowGap={{ md: 10 }}
-                >
-                  <UnorderedList spacing={6}>
-                    <ListItem>
-                      <b>Press and hold key 1</b> and{" "}
-                      <b>in the meantime, press key 2 4 times</b>.
-                    </ListItem>
-                    <ListItem>
-                      The LED will turn <b>GREEN</b> (steady light)
-                    </ListItem>
-                    <ListItem>Release both keys</ListItem>
-                    <ListItem>
-                      The light will turn <b>RED</b> and flash with a
-                      intermittently for about 2 seconds.
-                    </ListItem>
-                    <ListItem>
-                      <b>
-                        Position the remote control to be duplicated at 1 – 3 cm
-                      </b>{" "}
-                      from the HERMES.MF duplicator
-                    </ListItem>
-                    <ListItem>
-                      <b>Press and hold the key to copy</b> del original remote
-                      control
-                    </ListItem>
-                    <ListItem>
-                      The RED LED of the HERMES.MF duplicator
-                      <b>it will change flashing mode.</b>
-                    </ListItem>
-                    <ListItem>
-                      At this point it is necessary
-                      <b>
-                        {" "}
-                        issue the SOURCE CODE of the original remote control V2
-                      </b>{" "}
-                      pressing buttons 1 and 2 simultaneously (on models plus
-                      recent).
-                    </ListItem>
-                    <ListItem>
-                      Release the buttons of the original remote control
-                    </ListItem>
-                    <ListItem>
-                      While the <b>GREEN LED is flashing</b>, press the button
-                      of the HERMES.MF duplicator on which you want to memorize
-                      the device.
-                    </ListItem>
-
-                    <chakra.p fontSize={"xl"} mt={"10"}>
-                      The radio control is now functional and has duplicated the
-                      code of the old remote correctly.
-                      <br /> To associate the new HERMES.MF, hold down the
-                      button until the GREEN LED flashes turns off
-                    </chakra.p>
-                  </UnorderedList>
-                </Stack>
-              </GridItem>
-            </VStack>
-          </Box>
-        </ColorModeProvider>
-      </ThemeProvider>
-    </ChakraProvider>
-  );
+                  <br/>
+                  <br/>
+                </UnorderedList>
+              </Stack>
+            </GridItem>
+          </VStack>
+        </Box>
+      </ColorModeProvider>
+    </ThemeProvider>
+  </ChakraProvider>
+);
 }
 
 export default Auto;
