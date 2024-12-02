@@ -184,7 +184,7 @@ export default function CompatibilityView(props: Props) {
         >
           Thanks to this tool you can instantly check if the your remote control
           is compatible. Enter the brand or model of the remote controller.
-        </chakra.p>
+          </chakra.p>
         <Input
           width={{ base: "100%", lg: "50%" }}
           mt={10}
