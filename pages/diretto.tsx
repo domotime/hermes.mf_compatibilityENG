@@ -190,4 +190,3 @@ function Diretto() {
 }
 
 export default Diretto;
-
