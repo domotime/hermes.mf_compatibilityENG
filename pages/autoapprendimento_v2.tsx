@@ -100,7 +100,7 @@ function Auto() {
 
 <chakra.p mb={10} maxW="1000px">
   Below is the procedure for duplicating a remote control with Rolling Code for the V2 models with self-learning. <b />
-  Ensure that the remote control to duplicate is a MASTER.
+  Ensure that the remote control to duplicate is a MASTER..
 </chakra.p>
 
                   <br/>
