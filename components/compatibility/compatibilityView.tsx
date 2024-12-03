@@ -159,7 +159,6 @@ export default function CompatibilityView(props: Props) {
     } 
   };
 
-
   return (
     <Box py={{ base: 4, lg: 32 }} mx={{ base: 4, lg: 10 }}>
       <Box
