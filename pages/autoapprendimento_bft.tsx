@@ -140,7 +140,7 @@ function Auto() {
 <Feature title="Save to a button" index='10'>
   Finally, press the HERMES.MF button where you want to save the duplicated remote.
 </Feature>
-<Feature title="Final Check" index='11'>
+<Feature title="Final check" index='11'>
   Finally, check if the HERMES.MF button has been saved by pressing it a couple of times to see if the LED is <b>GREEN</b>.
 </Feature>
 
