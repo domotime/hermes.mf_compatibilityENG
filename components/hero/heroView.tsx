@@ -32,11 +32,13 @@ export default function HeroView() {
 
   const { colorMode, toggleColorMode } = useColorMode();
 
+  // Corretto useEffect con dipendenze
   useEffect(() => {
     setTimeout(() => {
       if (colorMode === "light") toggleColorMode();
     }, 1000);
-  }, []);
+  }, [colorMode, toggleColorMode]); // Aggiunte dipendenze colorMode e toggleColorMode
+
 
   return (
     <Box pos="relative" overflow="hidden" bg={bg}>
